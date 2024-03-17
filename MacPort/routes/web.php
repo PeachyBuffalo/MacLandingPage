@@ -33,16 +33,16 @@ Route::get('/contact', function() {
     return view('contact');
 });
 
-Route::get('/real-estate', function() {
-    return view('real-estate');
+Route::get('/real_estate', function() {
+    return view('real_estate');
 });
 
-Route::get('/front-end', function() {
-    return view('front-end');
+Route::get('/front_end', function() {
+    return view('front_end');
 });
 
-Route::get('/back-end', function() {
-    return view('back-end');
+Route::get('/back_end', function() {
+    return view('back_end');
 });
 
 Route::get('/prototyping', function() {
