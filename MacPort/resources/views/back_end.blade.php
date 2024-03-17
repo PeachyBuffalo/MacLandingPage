@@ -1,5 +1,5 @@
 <x-layout>
-    <h1> Welcome to Prototyping </h1>
+    <h1> Welcome to MacPort </h1>
 </x-layout>
 <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
     <div class="text-center">

@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Page</title>
-</head>
-<body>
+<x-layout>
+    <h1> Welcome to About </h1>
+    <body>
     <h2>Macall Smith Background:</h2>
     <p>Macall Smith is a full stack developer with a passion for creating and designing web applications.</p>
     <h3>Skills:</h3>
@@ -66,4 +63,11 @@
         <li>Faith Church Worship Committee</li>
     </ul>
 </body>
+</x-layout>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Page</title>
+</head>
+
 </html>
