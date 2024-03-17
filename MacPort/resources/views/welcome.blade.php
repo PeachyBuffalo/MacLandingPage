@@ -1,3 +1,6 @@
+<x-layout>
+    <h1> Welcome to MacPort </h1>
+</x-layout>
 <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
     <div class="text-center">
         <h1 class="text-4xl font-bold text-gray-900">Macall Smith</h1>
@@ -13,7 +16,6 @@
         </div>
     </div>
 </div>
-
 <style>
     .btn {
         display: inline-block;
