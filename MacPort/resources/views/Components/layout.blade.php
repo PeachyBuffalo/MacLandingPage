@@ -18,15 +18,15 @@
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
-                <a href="/" class="{{ request()->is('/') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                <a href="/about" class="{{ request()->is('about') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">About</a>
-                <a href="/contact" class="{{ request()->is('contact') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Contact</a>
-                <a href="/portfolio" class="{{ request()->is('portfolio') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Portfolio</a>
-                <a href="/projects" class="{{ request()->is('projects') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Projects</a>
-                <a href="/real_estate" class="{{ request()->is('real_estate') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Real Estate</a>
-                <a href="/front_end" class="{{ request()->is('front_end') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Front-end</a>
-                <a href="/back_end" class="{{ request()->is('back_end') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Back-end</a>
-                <a href="/prototyping" class="{{ request()->is('prototyping') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Prototyping</a>
+                <x-nav-link href="/" :active="request()->is('home')">Home</x-nav-link>
+                <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
+                <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
+                <x-nav-link href="/portfolio" :active="request()->is('portfolio')">Portfolio</x-nav-link>
+                <x-nav-link href="/projects" :active="request()->is('projects')">Projects</x-nav-link>
+                <x-nav-link href="/real_estate" :active="request()->is('real_estate')">Real Estate</x-nav-link>
+                <x-nav-link href="/front_end" :active="request()->is('front_end')">Front-end</x-nav-link>
+                <x-nav-link href="/back_end" :active="request()->is('back_end')">Back-end</x-nav-link>
+                <x-nav-link href="/prototyping" :active="request()->is('prototyping')">Prototyping</x-nav-link>
             </div>
           </div>
         </div>
