@@ -1,7 +1,6 @@
+<div class="patterned">
 <x-layout>
-    <h1> {{$greeting}} to MacPort </h1>
-
-<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+<div class="flex flex-col items-center justify-center min-h-screen">
     <div class="text-center">
         <h1 class="text-4xl font-bold text-gray-900">Macall Smith</h1>
         <p class="text-xl text-gray-700">Full Stack Developer</p>
@@ -19,7 +18,7 @@
 <style>
     .btn {
         display: inline-block;
-        background-color: #4f46e5;
+        background-color: #630fad;
         color: white;
         padding: 8px 24px;
         border-radius: 8px;
@@ -27,7 +26,12 @@
         transition: background-color 0.3s;
     }
     .btn:hover {
-        background-color: #4338ca;
+        background-color: #ae54d1;
+    }
+    .patterned {
+        background-image: radial-gradient(circle at center, #e1d6d6, #ea8d8d), repeating-radial-gradient(circle at center, #e1d6d6, #e1d6d6, 1px, transparent 80px, transparent 18px);
+        background-blend-mode: overlay;
+        background-color: #8dcdea;
     }
 </style>
 
