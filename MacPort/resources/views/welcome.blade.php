@@ -1,6 +1,6 @@
 <x-layout>
     <h1> {{$greeting}} to MacPort </h1>
-</x-layout>
+
 <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
     <div class="text-center">
         <h1 class="text-4xl font-bold text-gray-900">Macall Smith</h1>
@@ -30,3 +30,5 @@
         background-color: #4338ca;
     }
 </style>
+
+</x-layout>
