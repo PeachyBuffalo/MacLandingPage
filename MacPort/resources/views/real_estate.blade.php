@@ -1,32 +1,29 @@
 <x-layout>
-    <h1> Welcome to MacPort </h1>
-</x-layout>
-<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold text-gray-900">Macall Smith</h1>
-        <p class="text-xl text-gray-700">Full Stack Developer</p>
-    </div>
-    <div class="mt-8">
-        <div class="flex flex-col items-center space-y-4">
-            <a href="https://www.linkedin.com/in/macall-smith/" class="btn" target="_blank">LinkedIn: Macall Smith</a>
-            <a href="https://github.com/PeachyBuffalo" class="btn" target="_blank">GitHub: PeachyBuffalo</a>
-            <a href="https://instagram.com/OneMacallAway" class="btn" target="_blank">Instagram: OneMacallAway</a>
-            <a href="https://twitter.com/ChillestMac" class="btn" target="_blank">Twitter: ChillestMac</a>
-            <a href="mailto:macall.smith@gmail.com" class="btn" target="_blank">Email: Email Me</a>
+    <x-slot name="title">
+        Real Estate
+    </x-slot>
+
+    @foreach($roles as $role)
+        <div class="ml-10 flex items-baseline space-x-2 mt-2">
+        <div>
+            @if (count($role['referrals']) > 1)
+                <x-re-nav-link type="list" :active="request()->is('real_estate')" :referral1="$role['referrals'][0]" :referral2="$role['referrals'][1]">
+                    {{ $role['name'] }}
+                </x-re-nav-link>
+            @elseif (count($role['referrals']) === 0)
+                <x-re-nav-link type="a" :active="request()->is('real_estate')" >
+                    {{ $role['name']}}
+                </x-re-nav-link>
+            @else
+                <x-re-nav-link type="list" active="request()->is('real_estate')" :referral1="$role['referrals'][0]">
+                    {{ $role['name'] }}
+                </x-re-nav-link>
+            @endif
         </div>
-    </div>
-</div>
-<style>
-    .btn {
-        display: inline-block;
-        background-color: #4f46e5;
-        color: white;
-        padding: 8px 24px;
-        border-radius: 8px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-    }
-    .btn:hover {
-        background-color: #4338ca;
-    }
-</style>
+        </div>
+    @endforeach
+</x-layout>
+
+
+
+

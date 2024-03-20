@@ -20,7 +20,7 @@
             <div class="ml-10 flex items-baseline space-x-4">
                 <x-nav-link href="/" :active="request()->is('home')">Home</x-nav-link>
                 <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-                <x-nav-link href="/contact" :active="request()->is('contact')" type="button">Contact</x-nav-link>
+                <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
                 <x-nav-link href="/portfolio" :active="request()->is('portfolio')">Portfolio</x-nav-link>
                 <x-nav-link href="/projects" :active="request()->is('projects')">Projects</x-nav-link>
                 <x-nav-link href="/real_estate" :active="request()->is('real_estate')">Real Estate</x-nav-link>
