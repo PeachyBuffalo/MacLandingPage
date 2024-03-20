@@ -3,15 +3,8 @@
 Macall's Landing Page
 Uses TALL Stack: Tailwind, Alpine, Laravel, Livewire
 
-##Install and Run
-1. Clone the repository
-2. Run `composer install`
-3. Run `npm install`
-4. Run 'php artisan key:generate'
-6. Modify '.env' file to match your database settings
-7. Run `php artisan migrate`
-8. Run `npm run dev`
-9. Run `php artisan serve`
+Install and Run:
+  https://github.com/laravel-frontend-presets/tall
 
 Progress Log:
 
