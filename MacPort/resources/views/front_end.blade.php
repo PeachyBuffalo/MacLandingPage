@@ -3,17 +3,25 @@
     <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <div class="text-center">
             <h1 class="text-5xl font-bold text-gray-900">Macall Smith</h1>
-            <p class="text-2xl text-gray-700">UI Dev Showcase</p>
+            <p class="text-2xl text-gray-700">Front-end Dev Showcase</p>
         </div>
-    <div class="mt-6 border-t border-b border-gray-200 py-6 px-4 sm:px-6 lg:px-8">
+    <div class="mt-6 border-t border-b border-gray-200 py-6 px-4 sm:px-6 lg:px-8 bg-gray-300">
         <dl class="divide-y divide-gray-100">
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">Project Name:</dt>
             <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Macall Portfolio</dd>
         </div>
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-gray-900">Start Date:</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-1 sm:mt-0">February 2024</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+            <dt class="text-sm font-medium leading-6 text-gray-900">Completion Date:</dt>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-1 sm:mt-0">April 2024</dd>
+        </div>
+        <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">Role:</dt>
-            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Frontend Developer</dd>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Front-end Developer</dd>
         </div>
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">Client Contact</dt>
@@ -21,13 +29,13 @@
         </div>
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">Project Length</dt>
-            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">1 Month</dd>
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">3 Month</dd>
         </div>
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
             <dt class="text-sm font-medium leading-6 text-gray-900">About</dt>
-            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0"> 
+            <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                 <p>
-                    This project highlights Fullstack development. The development uses the TALL stack: Tailwind CSS for styling, Alpine.js for interactivity, Laravel for backend functionality, and Livewire for dynamic components. The project is containerized using Docker, and the database is managed with Laravel Herd. 
+                    This project highlights Fullstack development. The development uses the TALL stack: Tailwind CSS for styling, Alpine.js for interactivity, Laravel for backend functionality, and Livewire for dynamic components. The project is containerized using Docker, and the database is managed with Laravel Herd.
                 </p>
         </div>
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
@@ -56,7 +64,7 @@
                     <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
                     </svg>
                     <div class="ml-4 flex min-w-0 flex-1 gap-2">
-                    <span class="truncate font-medium">coverletter_back_end_developer.pdf</span>
+                    <span class="truncate font-medium">coverletter_front_end_developer.pdf</span>
                     <span class="flex-shrink-0 text-gray-400">4.5mb</span>
                     </div>
                 </div>

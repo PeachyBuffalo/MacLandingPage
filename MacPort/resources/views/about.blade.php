@@ -1,5 +1,9 @@
-<x-layout>
-    <h1> Welcome to About </h1>
+
+<div class="bg-gradient-to-r from-gray-200 from-10% via-gray-300 via-70% to-gray-500 to-90%">
+    <x-layout>
+        <x-slot name="title">
+            About
+        </x-slot>
     <body>
     <h2>Macall Smith Background:</h2>
     <p>Macall Smith is a full stack developer with a passion for creating and designing web applications.</p>
@@ -13,7 +17,7 @@
 
     <h3>Education:</h3>
     <p>
-        <strong>2023-2024 Georgia Tech University, Atlanta GA — Master’s in Computer Science</strong><br>
+        <strong>2023-2024 Georgia Tech University, Atlanta GA — Master's in Computer Science</strong><br>
         - Currently pursuing a Master's degree in Computer Science, called OMSCS, with a focus on interactive intelligence.<br>
         - Enrolled in a challenging core course in artificial intelligence that covers structured knowledge representations, problem-solving methods, planning, decision-making, and learning.<br>
         - Proficient in programming languages like Python and Java, as well as in data structures, object-oriented programming, and algorithm design.<br>
@@ -63,11 +67,5 @@
         <li>Faith Church Worship Committee</li>
     </ul>
 </body>
+</div>
 </x-layout>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About Page</title>
-</head>
-
-</html>
