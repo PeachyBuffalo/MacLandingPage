@@ -76,14 +76,15 @@
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="md:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-        <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">About</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Portfolio</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Real Estate</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Front-end</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Back-end</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Prototyping</a>
+        <x-mobile-nav-link href="/" :active="request()->is('home')">Home</x-mobile-nav-link>
+        <x-mobile-nav-link href="/about" :active="request()->is('about')">About</x-mobile-nav-link>
+        <x-mobile-nav-link href="/contact" :active="request()->is('contact')">Contact</x-mobile-nav-link>
+        <x-mobile-nav-link href="/portfolio" :active="request()->is('portfolio')">Portfolio</x-mobile-nav-link>
+        <x-mobile-nav-link href="/projects" :active="request()->is('projects')">Projects</x-mobile-nav-link>
+        <x-mobile-nav-link href="/real_estate" :active="request()->is('real_estate')">Real Estate</x-mobile-nav-link>
+        <x-mobile-nav-link href="/front_end" :active="request()->is('front_end')">Front-end</x-mobile-nav-link>
+        <x-mobile-nav-link href="/back_end" :active="request()->is('back_end')">Back-end</x-mobile-nav-link>
+        <x-mobile-nav-link href="/prototyping" :active="request()->is('prototyping')">Prototyping</x-mobile-nav-link>
       </div>
       <div class="border-t border-gray-700 pb-3 pt-4">
         <div class="flex items-center px-5">
@@ -118,11 +119,10 @@
   </header>
   <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-      {{ $slot }} 
+      {{ $slot }}
     </div>
   </main>
 </div>
-    {{$slot}}
 </body>
 </html>
 
