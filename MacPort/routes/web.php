@@ -2,19 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', [
+        'greeting' => 'Hi there! Welcome',
+        'name' => 'Friends'
+    ]);
 });
 
 Route::get('/about', function() {
@@ -34,7 +26,34 @@ Route::get('/contact', function() {
 });
 
 Route::get('/real_estate', function() {
-    return view('real_estate');
+    return view('real_estate', [
+        'roles' => [
+            'licensed_agent' => 'Licensed Agent',
+            'broker' => 'Broker',
+            'realtor' => 'Realtor',
+            'property_manager' => 'Property Manager',
+            'leasing_agent' => 'Leasing Agent',
+            'buyer' => 'Buyer',
+            'seller' => 'Seller',
+            'investor' => 'Investor',
+            'landlord' => 'Landlord',
+            'renter' => 'Renter',
+            'developer' => 'Developer',
+            'builder' => 'Builder',
+            'contractor' => 'Contractor',
+            'lender' => 'Lender',
+            'inspector' => 'Inspector',
+            'appraiser' => 'Appraiser',
+            'title_company' => 'Title Company',
+            'attorney' => 'Attorney',
+            'accountant' => 'Accountant',
+            'insurance_agent' => 'Insurance Agent',
+            'home_stager' => 'Home Stager',
+            'photographer' => 'Photographer',
+            'videographer' => 'Videographer',
+            'interior_designer' => 'Interior Designer',
+            'architect' => 'Architect', ]
+    ]);
 });
 
 Route::get('/front_end', function() {
