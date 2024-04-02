@@ -1,4 +1,6 @@
-
+@php
+    $color = 'gradient-to-r from-gray-200 from-10% via-gray-300 via-70% to-gray-500 to-90%';
+@endphp
 <div class="bg-gradient-to-r from-gray-200 from-10% via-gray-300 via-70% to-gray-500 to-90%">
     <x-layout>
         <x-slot name="title">
@@ -69,3 +71,4 @@
 </body>
 </div>
 </x-layout>
+@include('Components.footer', ['color' => $color])

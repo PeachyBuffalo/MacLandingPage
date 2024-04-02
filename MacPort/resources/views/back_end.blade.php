@@ -1,3 +1,6 @@
+@php
+    $color = 'gradient-to-t from-red-500 to-orange-300';
+@endphp
 <x-layout>
     <x-slot name="title">
         Back End
@@ -83,3 +86,4 @@
         </div>
     </div>
     </x-layout>
+    @include('Components.footer', ['color' => $color])

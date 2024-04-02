@@ -1,3 +1,6 @@
+@php
+    $color = 'gradient-to-t from-red-500 to-orange-300';
+@endphp
 <x-layout>
 <div>
     <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
@@ -79,3 +82,4 @@
     </div>
 </div>
 </x-layout>
+@include('Components.footer', ['color' => $color])
