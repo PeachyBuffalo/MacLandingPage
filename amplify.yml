@@ -1,14 +1,10 @@
 version: 1
-backend:
-  phases:
-    build:
-      commands:
-        - '# No Backend'
 frontend:
   phases:
     preBuild:
       commands:
-        - 'composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist'
+        - 'curl -sS https://getcomposer.org/installer | php'
+        - 'php composer.phar install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist'
     build:
       commands:
         - 'php artisan key:generate'
