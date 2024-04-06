@@ -8,6 +8,9 @@ Route::get('/', function () {
         'name' => 'Friends'
     ]);
 });
+use App\Http\Livewire\ContactForm;
+
+Route::get('/contact', ContactForm::class);
 
 Route::get('/about', function() {
     return view('about');
@@ -19,10 +22,6 @@ Route::get('/portfolio', function() {
 
 Route::get('/projects', function() {
     return view('projects');
-});
-
-Route::get('/contact', function() {
-    return view('contact');
 });
 
 Route::get('/real_estate', function() {
